@@ -27,17 +27,20 @@
   .text-center{
     text-align: center;
   }
- 
+ section{
+  padding:100px;
+ }
   h2 {
-    font-size: 24px;
+    /*font-size: 24px;*/
     text-transform: uppercase;
     color: #303030;
 /*    font-weight: 600;
-*/    margin-bottom: 20px;
-    margin-top: 20px;
+*/    /*margin-bottom: 20px;
+    margin-top: 20px;*/
     text-align: center;
     font-family: Century Gothic;
     letter-spacing: -1px;
+    padding: 30px;
   }
   h3{ color: #303030;
 /*    font-weight: 600;
@@ -56,7 +59,7 @@
     margin-bottom: 30px;
   }  
   .justify{
-    text-align: justify;
+    text-align: justify-all;
   }
 
   .jumbotron {
@@ -68,7 +71,12 @@
   }
   #quote{
     color: #f6f6f6;
-    margin-top: 10%;
+    margin-top: 15%;
+    font-size: 54px;
+
+  }
+  #quoteimg{
+    margin-bottom: 5%;
   }
   .container-fluid {
 /*     padding: 60px 50px; */
@@ -441,10 +449,18 @@
 .col-xs-4{
   text-align: center;
   margin: 0 auto;
+
 }
  #technical{
     text-align: center;
-  }
+}
+#cr{
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+}
+
 
 </style>
 </head>
@@ -458,7 +474,7 @@
     
           <a class="navbar-brand " href="#">
             <img src="hb.png" width="30" height="30">
-            स्वास्थ्य HonestBlock
+            स्वास्थ्य Blockchain
           </a>
           
         
@@ -470,10 +486,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
        
          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#vision">Our Vision</a></li>
+            <li class="nav-item"><a class="nav-link" href="#vision">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#product">Our Product</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
             
          </ul> 
        
@@ -513,7 +529,10 @@
           <img src="csir.png" height="100" width="100" class="img-fluid">
         </div>
         <div  class="col-xs-4">
-          <h1 id="quote">Swasthya HonestBlock</h1> 
+          <h1 id="quote">स्वास्थ्य Blockchain</h1> 
+          <div>
+            <img id="quoteimg" src="hb.png" height="100" width="100" class="img-fluid">
+          </div>
         </div>
         <div class="col-xs-4">
           <img src="cdri.png" height="100" width="100" class="img-fluid">
@@ -528,46 +547,51 @@
   
 </div>
 
-<div  id="vision" class="container-fluid bg-grey">
+<section  id="vision" class="container-fluid bg-grey">
   
-    
+    <h2>About Us</h2>
     
       <p>“स्वास्थ्य” (Swasthya) Blockchain is an open-source product developed by researchers, independent professionals and students under the guidance of CSIR- CDRI to minimise if not eliminate counterfeit medicines in the Pharmaceutical Supply Chain Management. The idea was conceptualized by Dr. Sukant Khurana, a scientist in CDRI, (who has vast research expertise in domains namely biomedical, pharmaceutical, biotechnology, data science.) who brought together a team of people with different areas of expertise to work towards fulfilling this goal with the use of blockchain technology.</p>
 
-      <h2>Why Pharmaceutical Supply Chain?</h2>
-      <p>India is the third largest Pharmaceutical product manufacturer in the world. The amount of medicines produced for both domestic and international market, causes a great concern in terms of its quality and questions the authenticity of it. 
-      Counterfeit drug industry’s estimated worth is more than $200 billion a year. These medicines make their way into the Supply Chain due to:
-      <p>• Lack of transparent procedures between each stakeholder</p>
-      <p>• Different technologies being used at each aspect of supply chain and the security implementation of it</p></p>
       
-      <h2>Why Blockchain?</h2>
-      <p>Blockchain – a decentralized distributed ledger, is used for development due to its enhanced secured architecture, which makes it highly reliable. It carries out transparent transactions making it an ideal technology to be used in Pharmaceutical Supply Chain Management. 
-      </p>
      
     
   
-</div>
+</section>
+
+<section id="Whypharma">
+  <h2>Why Pharmaceutical Supply Chain?</h2>
+  <p>India is the third largest Pharmaceutical product manufacturer in the world. The amount of medicines produced for both domestic and international market, causes a great concern in terms of its quality and questions the authenticity of it. 
+  Counterfeit drug industry’s estimated worth is more than $200 billion a year. These medicines make their way into the Supply Chain due to:
+  <p>• Lack of transparent procedures between each stakeholder</p>
+  <p>• Different technologies being used at each aspect of supply chain and the security implementation of it</p></p>
+  
+  <h2>Why Blockchain?</h2>
+  <p>Blockchain – a decentralized distributed ledger, is used for development due to its enhanced secured architecture, which makes it highly reliable. It carries out transparent transactions making it an ideal technology to be used in Pharmaceutical Supply Chain Management. 
+  </p>
+</section>
 
 
 
 
-<div id="product" class="container-fluid  slideanim">
+<section id="product" class="container-fluid  slideanim bg-grey">
   <h2>Our Product</h2>
   <div class="row slideanim">
-    <div class="col-sm-4 justify">
+    <div class="col-sm-6 justify">
       <h3>Product Details</h3>
       <p>The product is developed as a proof-of-concept, keeping only three stakeholders in mind, namely Manufacturer, Distributors and Customers. The customers can either be retailers or end-customers. The use cases which were taken into account were the following: full, partial and non-fulfilment of the shipment. The detailed documentation could be found in the downloadable file.</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6 ">
       <h3>Technical Documentation</h3>
-      <p>All the technical documentation regarding the product including participants,permissions and other information.</p>
+      <p>All the technical documentation regarding the product including participants, permissions and other information.</p>
       <a id="technical" href="Blockchain Participants and Permissions.pdf" download="permissions">Click here to view pdf</a>
     </div>
-    <div class="col-sm-4">
-      <h3>Future scope</h3>
+  </section>
+
+  <section>
+    <h2>Future scope</h2>
       <p>The introduction of counterfeit or substandard medicines can be detected from as early as procuring raw materials. The fact that every as aspect of supply chain uses different technology, makes it difficult to impose regulations. The resolution for this can be integration of them and building an end-to-end product which will be highly secured. “स्वास्थ्य” Blockchain can implement this with added efforts. This sector can benefit from the given product and expanding it to much elaborate work process such as medical devices, biomedical compounds and high grade chemicals.</p>
-    </div>
-  </div>
+  </section>
   
  
   
@@ -590,9 +614,11 @@
     </div> -->
 
 
-</div>
-  <br><br>
+
+<!-- /div>
+  <br><br> -->
   
+  <p id="cr">Copyright Swasthya Blockchain</p>
 
 <!-- <div id="blog" class="container-fluid text-center bg-grey">
   <h2>Blog</h2><br>
@@ -752,7 +778,7 @@
  -->
 
 
-<div id="contact" class="container-fluid bg-grey">
+<!-- <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row text-center">
    
@@ -765,13 +791,13 @@
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="message" name="message" placeholder="message" rows="5"></textarea><br>
+      <textarea class="form-control" id="message" name="message" placeholder="message" rows="5"></textarea><br> -->
       <!-- <div class="row">
         <div class="col-sm-6 col-sm-offset-1 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div> -->
-      <button class="btn btn-default" type="submit">Send</button>
+    <!--   <button class="btn btn-default" type="submit">Send</button>
     </div>
   </div>
 </div>
@@ -782,7 +808,7 @@
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p>Copyright</p>
-</footer>
+</footer> -->
  <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
