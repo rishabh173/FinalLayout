@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- <link rel="stylesheet" type="text/css" href="custom.css"> -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!--  <link rel="stylesheet" type="text/css" href="custom.css"> -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet'>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  p{
+    font-size: 18px;
+  }
+  #vision{
+    padding:50px;
+    margin-top: -29px;
+  }
+  .text-center{
+    text-align: center;
+  }
+ section{
+  padding:100px;
+ }
+  h2 {
+    /*font-size: 24px;*/
+    text-transform: uppercase;
+    color: #303030;
+/*    font-weight: 600;
+*/    /*margin-bottom: 20px;
+    margin-top: 20px;*/
+    text-align: center;
+    font-family: Century Gothic;
+    letter-spacing: -1px;
+    padding-top: 100px;
+  }
+  h3{ color: #303030;
+/*    font-weight: 600;
+*/    margin-bottom: 30px;
+    margin-top: 30px;
+ font-family: Century Gothic;
+    letter-spacing: -1px;
+    text-align: center;
+
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .justify{
+    text-align: justify-all;
+  }
+
+  .jumbotron {
+  
+    background:url('cover.jpeg') center;
+    background-size: cover;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  #quote{
+    color: #f6f6f6;
+    margin-top: 15%;
+    font-size: 54px;
+
+  }
+  #quoteimg{
+    margin-bottom: 5%;
+  }
+  .container-fluid {
+/*     padding: 60px 50px; */
+  }
+  #contact{
+    padding: 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  #product{
+    padding:50px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  nav.bg-light{
+  background-color: #f4511e!important;
+  
+}
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+ 
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-md {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  .preloader{
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 100%;
+  width:100%;
+/*  background: #000;
+*/  transition: 1s;
+}
+.preloader:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #000;
+  transition: 1s;
+}
+.preloader.complete:before{
+  left: -50%;
+}
+.preloader:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #000;
+  transition: 1s;
+}
+.preloader.complete:after{
+  right: -50%;
+}
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: solid 3px #fff;
+  animation: animate 2s linear;
+  animation-iteration-count: infinite;
+  z-index: 10000;
+
+}
+.loader:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  animation:animatebg 2s linear ;
+  animation-iteration-count: infinite;
+}
+.preloader.complete{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+@keyframes animate{
+  0%
+  {
+    transform: translate(-50%,-50%) rotate(0deg); 
+  }
+  25%
+  {
+    transform: translate(-50%,-50%) rotate(180deg); 
+  }
+  50%
+  {
+    transform: translate(-50%,-50%) rotate(180deg); 
+  }
+  75%
+  {
+    transform: translate(-50%,-50%) rotate(360deg); 
+  }
+  100%
+  {
+    transform: translate(-50%,-50%) rotate(360deg); 
+  }
+}
+@keyframes animatebg{
+  0%
+  {
+    height: 0;
+  }
+  25%
+  {
+    height: 0;   
+  }
+  50%
+  {
+     height: 100%;
+  }
+  75%
+  {
+     height: 0;
+  }
+  100%
+  {
+     height: 0;
+  }
+}
+
+.container h1{
+  text-align: center;
+
+}
+.card{
+  position: relative;
+  height: 375px;
+  width: 250px;
+  transform-style: preserve-3d;
+  perspective: 400px;
+  transition: 0.5s;
+  margin: 40px auto;
+  
+
+}
+.card .front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+  
+
+
+}
+.card:hover .front{
+  transform: rotateX(-180deg);
+}
+.card .back{
+  position: absolute;
+  
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+    
+
+
+}
+.card .back:before{
+  content: '';
+  position: absolute;
+/*  top: 20px;
+*/  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+}
+.card:hover .back{
+  transform: rotateX(0deg);
+}
+.card .back .details{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Century Gothic;
+  margin: 0;
+
+}
+.card .back .details h2{
+  color: #fff;
+}
+.card .back .details h2 span{
+  font-size: 12px;
+  margin-top: 0px;
+  color: white;
+}
+
+.socialIcons a {
+/*  display: inline-block;
+*/  width: 20px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  border-radius: 50%;
+}
+.socialIcons a i.fa{
+  line-height: 20px;
+}
+.socialIcons a:hover{
+  background: #e91e63;
+}
+.col-xs-4{
+  text-align: center;
+  margin: 0 auto;
+
+}
+ #technical{
+    text-align: center;
+}
+#cr{
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+}
+.col-md-3,.col-sm-6{
+  text-align: center;
+}
+.col-md-3 p,.col-sm-6 p{
+  font-size: 14px;
+  margin-top: -5px;
+}
+h4{
+  text-align: center;
+}
+
+</style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light ">
+    
+          <a class="navbar-brand " href="index.html">
+            <img src="hb.png" width="30" height="30">
+            स्वास्थ्य Blockchain
+          </a>
+          
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>                    
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Our Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+            
+         </ul> 
+       
+       
+      </div>       
+      
+      
+        
+  </nav>
+  
+  
+
+ <div id="team">
+     <div  class="container">
+    <h2>Our Team</h2><br>
+    <h3>Leadership</h3>
+    <div class="row">
+      
+      <div class="col-md-3 col-sm-6">
+        <img src="Sukant.jpg" height="150" width="150" class="img-fluid">
+        <h5>Sukhant Khurana</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Sailaja Nimushakavi</h5>
+        <p>Technology</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Kavita.jpg" height="150" width="150" class="img-fluid">
+        <h5>Kavita Parmar</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Kshitiz.jpeg" height="150" width="150" class="img-fluid">
+        <h5>Kshitij Tiwari</h5>
+        <p>Blockchain</p>
+      </div>
+    </div>
+    <h3>Blockchain</h3>
+    <div class="row">
+      
+      <div class="col-md-3 col-sm-6">
+        <img src="Nadeem.jpg" height="150" width="150" class="img-fluid">
+        <h5>Nadeem Bhati</h5>
+        <p>Blockchain, DAPP UI</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Swarnakamali.jpg" height="150" width="150" class="img-fluid">
+        <h5>Swarna Kamali </h5>
+        <p>Blockchain, DAPP UI</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Prateek.jpg" height="150" width="150" class="img-fluid">
+        <h5>Prateek Chawla</h5>
+        <p>Blockchain, DAPP UI</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Parth.jpg" height="150" width="150" class="img-fluid">
+        <h5>Parth Bakshi</h5>
+        <p>Blockchain, DAPP UI</p>
+      </div> 
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Rohit Raj</h5>
+        <p>Blockchain, DAPP UI</p>
+      </div>      
+    </div>
+    <h3>Backend</h3>
+    <div class="row">      
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Yashwardhan Mathur</h5>
+        <p>AWS Admin</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Piyush.jpg" height="150" width="150" class="img-fluid">
+        <h5>Piyush Manglani</h5>
+        <p>AWS Admin</p>
+      </div>
+      <div class="col-md-3">
+        <img src="Nibir.jpg" height="150" width="150" class="img-fluid">
+        <h5>Nibir Hira</h5>
+        <p>MongoDB</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Adit.jpeg" height="150" width="150" class="img-fluid">
+        <h5>Adit Kotwal</h5>
+        <p>API Integration</p>
+      </div>
+    </div>
+    <h3>Frontend</h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="Lav.jpg" height="150" width="150" class="img-fluid">
+        <h5>Luv Tiwari</h5>
+        <p>Angular Developer</p>
+      </div>
+    </div>
+    <h3>Website</h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Mansha Lamba</h5>
+        <p>UX</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="rk.png" height="150" width="150" class="img-fluid">
+        <h5>Rishabh Khosla</h5>
+        <p>UI</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Vikas.jpg" height="150" width="150" class="img-fluid">
+        <h5>Vikas Singh</h5>
+        <p>UI</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Afsha.jpeg" height="150" width="150" class="img-fluid">
+        <h5>Afsha Sultana</h5>
+        <p>UI</p>
+      </div> 
+      <div class="col-md-3 col-sm-6">
+        <img src="Apoorv.jpeg" height="150" width="150" class="img-fluid">
+        <h5>Apoorv Bharadwaj</h5>
+        <p>UI</p>
+      </div>    
+    </div>
+    <h3>Content</h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="Sahil.jpg" height="150" width="150" class="img-fluid">
+        <h5>Sahil Saeed</h5>
+        <p>Website Content</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Srilatha.jpg" height="150" width="150" class="img-fluid">
+        <h5>Srilatha Mahajanam</h5>
+        <p>White Paper</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Vinayak Bhushan</h5>
+        <p>Blogs</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Anuja.jpeg" height="150" width="150" class="img-fluid">
+        <h5>Anuja Jadhav</h5>
+        <p>Blogs</p>
+      </div> 
+      <div class="col-md-3 col-sm-6">
+        <img src="Sumiti.jpeg" height="150" width="150" class="img-fluid">
+        <h5>Sumiti Sandhu</h5>
+        <p>Blogs</p>
+      </div>  
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Dhananjay Prakash</h5>
+        <p>Blogs</p>
+      </div>    
+    </div>
+    <h3>Marketing</h3>
+    <h4>Social Media</h4>
+     <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="Sai.jpg" height="150" width="150" class="img-fluid">
+        <h5>Sai Nethra</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Twarit.jpg" height="150" width="150" class="img-fluid">
+        <h5>Twarit Saxena</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="Raj.jpg" height="150" width="150" class="img-fluid">
+        <h5>Raj Kumar Singh</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Rishabh Kumar</h5>
+      </div> 
+      <div class="col-md-3 col-sm-6">
+        <img src="Pushkar.jpg" height="150" width="150" class="img-fluid">
+        <h5>Pushkar Pawar</h5>
+      </div>    
+    </div>
+    <h4>Public Relations</h4>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Jatin Rishu</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Utkarsh Jaiswal</h5>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="tm.png" height="150" width="150" class="img-fluid">
+        <h5>Vaishnavi Singh</h5>
+      </div>
+    </div>
+
+
+  </div>
+    </div>
+
+  
+
+  
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+    $(function(){
+   $('.col-md-3').hover(function() {
+        
+        // $('#coverquote').text('A random generic quote on whatever the client wants!');
+        // $('#coverdescription').hide();
+        // $(this).css('background-image','url(medicine2.jpeg)');
+        $(this).css('color','#474747');
+
+
+        
+    }, function() {
+        $(this).css('color','#818181');
+    });
+
+
+
+  
+
+});
+  </script>
+
+
+</body>
+</html>
